@@ -1,20 +1,29 @@
-\documentclass{article}
+\documentclass[12 pt]{article}
 
-\usepackage{fontspec}
-\setmainfont{Linux Libertine O}
+% Hugo, tu peux rechanger, c'était juste pour pouvoir compiler avec pdflatex.
+%\usepackage{fontspec}
+%\setmainfont{Linux Libertine O}
 \usepackage{titlesec}
 \usepackage{lastpage}
 \usepackage{totcount}
 \usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+
+\pagestyle{empty}
+\parskip=8 pt
+\raggedright
 
 \titlelabel{Article \thetitle{} — }
 
-\newcommand{\Nom}{\textsc{Nantes Machine Learning}}
-\newcommand{\Sigle}{NML}
+\newcommand{\Nom}{\textsc{Nantes Machine Learning Association}}
+\newcommand{\Sigle}{NMLA}
 
 \regtotcounter{section}
 
-\title{Statuts de l'association\\\Nom}
+\title{Statuts de l'association \\
+  \Nom \\
+  \small Assemblée Constitutive du 9 avril 2018}
 \date{}
 
 \begin{document}
@@ -40,18 +49,15 @@ Elle peut être désignée par le sigle~: \og\Sigle\fg.
 L'association \Nom{} a pour objet désintéressé et non lucratif~:
 
 \begin{itemize}
-\item exposer et vulgariser la connaissance scientifique en machine
-  learning
-\item faire se rencontrer les différents acteurs, scientifiques et
-  industriels du domaine du machine learning
+\item la promotion de l'apprentissage automatique, et sa théorie et
+  ses techniques, dans la région nantaise
+\item l'organisation du Nantes Machine Learning Meetup (NMLM) et tout
+  autre manifestation qui lui semble utile dans l'achèvement des ses objectifs
 \end{itemize}
 
-Les moyens d'action de l'association \Nom{} sont notamment~:
-
-\begin{itemize}
-\item la tenue de réunions scientifiques
-\item l'organisation d'un groupe de lecture
-\end{itemize}
+Les moyens d'action de l'association \Nom{} sont notamment la NMLM, la
+NMLRG (NML Reading Group), et tout autre moyen qui semble, aux membres
+de l'association et à son comité directeur, utile et raisonnable.
 
 \section{Siège social}
 \label{sec:siege-social}
@@ -101,11 +107,11 @@ Pour être admis en tant que membre adhérent, il faut~:
 \item avoir été agréé préalablement par le conseil d'administration
   qui, en cas de refus, n'aura pas à en faire connaître les raisons~;
 \item formuler et signer une demande écrite~;
-\item accepter intégralement les statuts, le règlement intérieur de
+\item accepter intégralement les statuts et le règlement intérieur de
   l'association~;
 \item s'acquitter du montant de la cotisation annuelle si l'assemblée
   générale en a fixé une, comme prévu par l'article
-  \ref{cotisation-annuelle}~;
+  \ref{sec:cotisation-annuelle}~;
 \item s'engager à participer à la réalisation de l'objet de
   l'association.
 \end{itemize}
@@ -166,7 +172,8 @@ composé de~:
 
 Le bureau est élu pour un an et peut être reconduit. Le même membre
 peut occuper plusieurs postes parmi les postes détaillés ci-dessus à
-l'exception des postes de président et trésorier.
+l'exception des postes de président et trésorier, qui ne peuvent être
+simultanément occupé par la même personne.
 
 \section{Réunion du bureau}
 \label{sec:reunion-du-bureau}
@@ -264,7 +271,7 @@ L'assemblée générale comprend tous les membres.
 
 Elle se réunit au moins une fois par an dans les six mois de la
 clôture de l'exercice et chaque fois qu'elle est convoquée par le
-conseil d'administration ou sur la demande d'au moins la moitié des
+conseil d'administration ou sur la demande d'au moins le quart des
 membres.
 
 L'ordre du jour est réglé par le conseil d'administration.
@@ -304,13 +311,13 @@ présence sera émargée par chaque participant et certifiée par le
 bureau.
 
 Les décisions en assemblée générale sont prises à main levée à la
-majorité absolue des membres présents ou représentés et les
+majorité relative des membres présents ou représentés et les
 membres qui s'abstiennent lors du vote sont considérés comme
-repoussant les résolutions mises au vote.
+repoussant les résolutions mises au vote. % ??
 
 Le scrutin secret peut être demandé soit par le conseil
-d'administration, soit par le quart des membres présents. Le bulletin
-secret est obligatoire lors des votes sur les personnes.
+d'administration, soit par au moins quatre membres présents. Le
+bulletin secret est obligatoire lors des votes sur les personnes.
 
 \section{Assemblée générale extraordinaire}
 \label{sec:assemblee-generale-extraordinaire}
@@ -391,8 +398,9 @@ Le Président, au nom du conseil d'administration, est chargé de remplir toutes
 Ce document relatif aux statuts de l'association \Nom{} comporte
 \pageref{LastPage} pages, ainsi que \total{section} articles.
 
-\section*{}
-Fait à Nantes le \date{\today}.
+% Cf. également https://www.alchemistowl.org/pocorgtfo/pocorgtfo14.pdf
+% Voir le MD5 en bas de la première page, puis la discussion qui
+% commence sur la page 46 ff (14:09 ff).
 
 \end{document}
 
